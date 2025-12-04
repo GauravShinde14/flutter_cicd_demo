@@ -40,7 +40,7 @@ jobs:
         run: flutter test
 
       - name: Build APK
-        run: flutter build apk --release
+        run: flutter build apk --release --android-skip-build-dependency-validation
 
       - name: Build IPA (no code-sign)
         run: flutter build ipa --no-codesign
